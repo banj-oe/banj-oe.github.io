@@ -1,1 +1,56 @@
-There is no fuckin' Terms of Service.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms of Service Statement</title>
+  <style>
+    /* Base styling with a dark background for reduced eye strain */
+    body {
+      background-color: #ddddff; /* Dark background */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    /* Scrolling text style with enlarged font */
+    .scrolling-text {
+      font-family: Arial, sans-serif;
+      font-size: 10em; /* Increased text size */
+      font-weight: bold;
+      color: black; /* dark as the night */
+      position: absolute;
+      white-space: nowrap;
+      animation: scroll 10s linear infinite;
+    }
+    @keyframes scroll {
+      0%   { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    /* Blinking text style with enlarged font */
+    .blinking-text {
+      font-family: Arial, sans-serif;
+      font-size: 10em; /* Increased text size */
+      font-weight: bold;
+      color: #FF0000; /* Bright red text */
+      animation: blink 1s step-start infinite;
+    }
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Uncomment one of the following lines to choose the effect -->
+
+  <!-- Scrolling text animation -->
+  <div class="scrolling-text">There is no fuckin' Terms of Service.</div>
+
+  <!-- Blinking text animation -->
+  <!-- <div class="blinking-text">There is no fuckin' Terms of Service.</div> -->
+</body>
+</html>
